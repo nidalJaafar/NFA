@@ -7,17 +7,17 @@
             integrity="sha512-E/owfVh8/U1xwhvIT4HSI064DRc1Eo/xf7AYax84rt9gVqA8tc/JNH/lvTl1tuw9PUHQIMGUtObkjYkgRjFqAA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="index.js" defer></script>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1 class="title">Darsa NFA</h1>
 <div class="row-container">
-    <div class="column-container">
+    <form id="form" class="column-container">
         <label class="regex-input-label" for="regex-input">Enter expression</label>
         <input type="text" class="regex-input" id="regex-input">
-        <button id="generate">Generate NFA</button>
-    </div>
+        <input type="submit" id="generate" value="Generate NFA"/>
+    </form>
     <div class="mermaid" id="mermaid"></div>
 </div>
 </body>

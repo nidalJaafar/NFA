@@ -7,6 +7,9 @@ const res = async regex => {
     mermaid.init()
 }
 
-document.getElementById('generate').addEventListener('click', () => res(document.getElementById('regex-input').value))
+document.getElementById('form').addEventListener('submit', (e) => {
+    e.preventDefault()
+    res(document.getElementById('regex-input').value)
+})
 
 mermaid.initialize({startOnLoad: false})
