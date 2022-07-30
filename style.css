@@ -46,17 +46,10 @@ body {
     color: white;
 }
 
-@media (max-width: 800px) {
-    html, body {
-        height: 100%;
-    }
+@media only screen and (max-width: 700px) {
+
     .row-container {
-        margin-top: 10%;
-        display: flex;
-        align-items: center;
+        margin-top: 100px;
         flex-direction: column;
-    }
-    .mermaid {
-        height: 90%;
     }
 }

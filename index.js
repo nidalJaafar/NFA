@@ -1,5 +1,3 @@
-// import mermaid from 'https://cdn.skypack.dev/mermaid'
-
 const res = async regex => {
     const data = await fetch('https://darsanfa.azurewebsites.net/api/nfa/compile?regex=' + regex)
     let text = await data.text();
