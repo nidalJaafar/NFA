@@ -9,7 +9,6 @@ const res = async regex => {
 ['click', 'touchstart'].forEach(event => document.getElementById('generate').addEventListener(event, (e) => {
     e.preventDefault()
     res(document.getElementById('regex-input').value)
-    console.log('triggered')
 }))
 
 mermaid.initialize({startOnLoad: false})
